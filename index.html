@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    
+    
+    <title>Frontend Mentor | Interactive rating component</title>
+
+  </head>
+  <body>
+
+    <!-- Rating state start -->
+
+    <main id="container">
+      <section id="section-rating">
+
+        <div id="star">
+          <img src="images/icon-star.svg" alt="ícone star">
+        </div>
+
+        <h1>How did we do?</h1>
+
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+        
+        <div id="btn-rating">
+          <button onclick="selectNumber1()" class="btn-rating" type="button">1</button>
+          <button onclick="selectNumber2()" class="btn-rating" type="button">2</button>
+          <button onclick="selectNumber3()" class="btn-rating" type="button">3</button>
+          <button onclick="selectNumber4()" class="btn-rating" type="button">4</button>
+          <button onclick="selectNumber5()" class="btn-rating" type="button">5</button>
+        </div>
+
+        <div>
+          <button onclick="submitData()" id="btn-submit" type="submit">SUBMIT</button>
+        </div>
+
+      </section>
+
+      <section class="thank hidden">
+        <img src="images/illustration-thank-you.svg" alt="thank you image">
+        <p class="thank-p1">You selected<span id="num-rating"></span> out of 5</p>
+        <h1>Thank you!</h1>
+        <p class="thank-p2">We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
+        <button onclick="backSection()" id="btn-rate" type="button">RATE AGAIN</button>
+      </section>
+
+      
+
+    </main>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://eliseucaputo.github.io/Personal-Portfolio/" target="_blank">Eliseu Caputo</a>.
+    </div>
+
+  </body>
+</html>
